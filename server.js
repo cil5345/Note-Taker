@@ -43,7 +43,7 @@ app.post("/api/notes", function (req, res) {
 
 
 app.delete('/api/notes/:id', function (req, res) {
-    let retrievedIDNumber = req.params.id;
+    let retrievedIDNumber = parseInt(req.params.id);
     console.log(retrievedIDNumber)
     for (let i = 0; i < db.length; i++) {
         if (retrievedIDNumber === db[i].id) {
