@@ -5,7 +5,7 @@ let num = 0;
 // Sets up the Express App
 // =============================================================
 const app = express();
-const PORT = 3000 //|| process.env.PORT
+const PORT = 3000 || process.env.PORT;
 let db = require("./db/db.json")
 // console.log(db)
 
@@ -67,4 +67,3 @@ app.listen(PORT, function () {
 
 
 
-// DELETE: look up javascript splice
